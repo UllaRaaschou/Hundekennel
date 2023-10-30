@@ -20,9 +20,13 @@ namespace WPF_Hundekennel.View
     /// </summary>
     public partial class Collection : UserControl
     {
+
         public Collection()
         {
             InitializeComponent();
         }
+
+       
+        
     }
 }

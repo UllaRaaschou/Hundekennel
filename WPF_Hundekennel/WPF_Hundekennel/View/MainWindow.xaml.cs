@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_Hundekennel.ViewModel;
 
 namespace WPF_Hundekennel
 {
@@ -20,9 +21,11 @@ namespace WPF_Hundekennel
     /// </summary>
     public partial class MainWindow : Window
     {
+        MainViewModel mvm = new MainViewModel();
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = mvm;
         }
     }
 }

@@ -21,36 +21,51 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Row="1"
-              Background="#1e1e1e">
+              Background="#ffc8dd">
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition Height="50" />
 
             </Grid.RowDefinitions>
+
             <StackPanel>
+                <Border BorderBrush="#ffafcc"
+                        BorderThickness="2"
+                        Background="#ffafcc">
+
+                    <Label Content="Menu"
+                           FontSize="20"
+                           Foreground="White"
+                           Margin="5,0,0,4"
+                           FontWeight="Bold" />
+                </Border>
+
                 <RadioButton VerticalAlignment="Top"
                              Content="Hjem"
-                             FontSize="14"
+                             FontSize="20"
                              Foreground="White"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding HomeViewCommand}">
 
                 </RadioButton>
+
                 <RadioButton VerticalAlignment="Top"
                              Content="Tilføj Kuld"
-                             FontSize="14"
+                             FontSize="20"
                              Foreground="White"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="">
 
                 </RadioButton>
+
                 <RadioButton Content="Register"
-                             FontSize="14"
+                             FontSize="20"
                              Foreground="White"
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding CollectionViewCommand}">
 
                 </RadioButton>
+
             </StackPanel>
 
         </Grid>
