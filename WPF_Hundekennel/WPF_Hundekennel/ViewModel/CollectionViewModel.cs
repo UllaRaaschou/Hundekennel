@@ -10,7 +10,7 @@ namespace WPF_Hundekennel.ViewModel
     /// Indeholder et object af Collection View model
     /// </summary>
    
-    class CollectionViewModel
+    public class CollectionViewModel
     {
         
         #region ListeAfPersoner
@@ -27,9 +27,13 @@ namespace WPF_Hundekennel.ViewModel
         public Dog SelectedDog { get; set; }
 
         #endregion
+        public CollectionViewModel()
+        {
+            
+        }
     }
     // OBS FØLGENDE KLASSE ER EN TEST KLASSE OG IKKE ENDELIG IMPLEMENTERING
-    class Dog
+    public class Dog
     {
         public string DogName { get; set; }
         public string DogGender { get; set; }

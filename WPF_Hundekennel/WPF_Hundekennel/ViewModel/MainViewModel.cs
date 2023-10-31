@@ -13,11 +13,14 @@ namespace WPF_Hundekennel.ViewModel
  /// <summary>
  ///  Indeholder et Object af main view model, som arver fra observable object
  /// </summary>
-    class MainViewModel : ObservableObject 
+    public class MainViewModel : ObservableObject 
     {
-        #region Properties
+        #region Commands
         public RelayCommand HomeViewCommand{ get; set; }
         public RelayCommand CollectionViewCommand { get; set; }
+        #endregion 
+        #region Properties
+
         public HomeViewModel HomeVM { get; set; }
 
         public CollectionViewModel CollectionVM { get; set; }
@@ -38,6 +41,7 @@ namespace WPF_Hundekennel.ViewModel
         /// <para> MainView model Constructor, initialiserer de andre view models: Home view model, Collection View Model etc. </para>
         /// Hvis der kommer flere views skal de indsættes her
         /// </summary>
+        
         public MainViewModel()
         {
             #region initialisering af objekter
