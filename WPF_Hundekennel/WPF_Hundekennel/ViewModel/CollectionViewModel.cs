@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace WPF_Hundekennel.ViewModel
 {
-    class CollectionViewModel
+    /// <summary>
+    /// Indeholder et object af Collection View model
+    /// </summary>
+   
+    public class CollectionViewModel
     {
+        
         #region ListeAfPersoner
         public List<Dog> Dogs { get; set; } 
             = new List<Dog> 
@@ -22,9 +27,13 @@ namespace WPF_Hundekennel.ViewModel
         public Dog SelectedDog { get; set; }
 
         #endregion
+        public CollectionViewModel()
+        {
+            
+        }
     }
     // OBS FØLGENDE KLASSE ER EN TEST KLASSE OG IKKE ENDELIG IMPLEMENTERING
-    class Dog
+    public class Dog
     {
         public string DogName { get; set; }
         public string DogGender { get; set; }

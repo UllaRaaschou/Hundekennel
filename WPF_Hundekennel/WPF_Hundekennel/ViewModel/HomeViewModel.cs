@@ -8,6 +8,9 @@ namespace WPF_Hundekennel.ViewModel
 {
     public class HomeViewModel
     {
+        /// <summary>
+        /// Indeholder et objekt af Home View Model
+        /// </summary>
         public HomeViewModel()
         {
             
