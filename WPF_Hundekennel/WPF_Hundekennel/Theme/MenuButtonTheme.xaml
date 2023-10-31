@@ -13,7 +13,6 @@
                             <TextBlock Text="{TemplateBinding Property=Content}"
                                        VerticalAlignment="Center"
                                        Margin="30,0,0,0" />
-
                         </Grid>
                     </ControlTemplate>
                 </Setter.Value>
@@ -29,27 +28,8 @@
             <Trigger Property="IsChecked"
                      Value="True">
 
-                <Trigger.EnterActions>
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <ColorAnimation Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
-                                            To="#ffafcc"
-                                            Duration="0:0:0.1" />
-                            
-                        </Storyboard>
-                    </BeginStoryboard>
-                </Trigger.EnterActions>
-
-                <Trigger.ExitActions>
-                    <BeginStoryboard>
-                        <Storyboard>
-                            <ColorAnimation Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
-                                            To="Transparent"
-                                            Duration="0:0:0.1" />
-                        </Storyboard>
-                    </BeginStoryboard>
-                </Trigger.ExitActions>
-
+                <Setter Property="Background"
+                        Value="#3700B3" />
             </Trigger>
 
         </Style.Triggers>

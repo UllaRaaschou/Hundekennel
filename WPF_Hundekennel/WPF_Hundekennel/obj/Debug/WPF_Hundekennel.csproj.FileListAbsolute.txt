@@ -48,3 +48,5 @@ C:\Users\45217\Desktop\Datamatiker\Hundekennel\WPF_Hundekennel\WPF_Hundekennel\o
 C:\Users\45217\Desktop\Datamatiker\Hundekennel\WPF_Hundekennel\WPF_Hundekennel\obj\Debug\WPF_Hundekennel.csproj.CopyComplete
 C:\Users\45217\Desktop\Datamatiker\Hundekennel\WPF_Hundekennel\WPF_Hundekennel\obj\Debug\WPF_Hundekennel.exe
 C:\Users\45217\Desktop\Datamatiker\Hundekennel\WPF_Hundekennel\WPF_Hundekennel\obj\Debug\WPF_Hundekennel.pdb
+C:\Users\45217\Desktop\Datamatiker\Hundekennel\WPF_Hundekennel\WPF_Hundekennel\obj\Debug\Theme\MenuTheme.baml
+C:\Users\45217\Desktop\Datamatiker\Hundekennel\WPF_Hundekennel\WPF_Hundekennel\obj\Debug\Theme\WindowTheme.baml

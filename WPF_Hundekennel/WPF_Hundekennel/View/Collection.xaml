@@ -26,7 +26,7 @@
             <ColumnDefinition Width="20" />
         </Grid.ColumnDefinitions>
         <!--#endregion-->
-        
+
         <!--#region ListBox-->
         <ListBox BorderBrush="White"
                  BorderThickness="0"
@@ -48,15 +48,14 @@
             </ListBox.ItemTemplate>
         </ListBox>
         <!--#endregion-->
-        
+
         <!--#region SelectedDog-->
         <Border BorderBrush="#bde0fe"
-                
                 CornerRadius="10"
                 Grid.Row="1"
                 Grid.Column="3"
                 Grid.RowSpan="3"
-                Background="#bde0fe">
+                Background="{StaticResource WindowBackgroundColor }">
 
             <StackPanel Orientation="Vertical"
                         Grid.Row="1"
@@ -65,18 +64,12 @@
                         Margin="10,10,10,0">
 
                 <Border BorderBrush="White"
-                        
                         CornerRadius="10"
                         Background="White">
-                    <Border.Effect>
-                        <DropShadowEffect Color="#a2d2ff"
-                                          Direction="270"
-                                          BlurRadius="3"
-                                          ShadowDepth="3" />
-                    </Border.Effect>
 
                     <StackPanel Orientation="Horizontal">
                         <Label VerticalAlignment="Center"
+                               Foreground="{StaticResource WindowdTheme_FontColor}"
                                Content="Navn"
                                FontWeight="Bold"
                                FontSize="14" />
@@ -88,23 +81,17 @@
                     </StackPanel>
                 </Border>
                 <Border BorderBrush="White"
-                        
                         CornerRadius="10"
                         Background="White"
                         Margin="0,10,0,0">
-                    <Border.Effect>
-                        <DropShadowEffect Color="#a2d2ff"
-                                          Direction="270"
-                                          BlurRadius="3"
-                                          ShadowDepth="3" />
-                    </Border.Effect>
 
                     <StackPanel Orientation="Horizontal">
 
                         <Label VerticalAlignment="Center"
                                Content="Køn"
                                FontWeight="Bold"
-                               FontSize="14" />
+                               FontSize="14"
+                               Foreground="{StaticResource WindowdTheme_FontColor}" />
 
                         <TextBox Background="White"
                                  VerticalAlignment="Center"
@@ -117,6 +104,6 @@
             </StackPanel>
         </Border>
         <!--#endregion-->
-        
+
     </Grid>
 </UserControl>

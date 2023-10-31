@@ -21,7 +21,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid Grid.Row="1"
-              Background="#ffc8dd">
+              Background="{StaticResource MenuBackgroundColor_Primary}">
             <Grid.RowDefinitions>
                 <RowDefinition />
                 <RowDefinition Height="50" />
@@ -29,9 +29,8 @@
             </Grid.RowDefinitions>
 
             <StackPanel>
-                <Border BorderBrush="#ffafcc"
-                        BorderThickness="2"
-                        Background="#ffafcc">
+                <Border 
+                        Background="{StaticResource  MenuBackgroundColor_PrimaryVariant}">
 
                     <Label Content="Menu"
                            FontSize="20"

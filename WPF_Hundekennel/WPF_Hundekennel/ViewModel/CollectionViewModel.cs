@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace WPF_Hundekennel.ViewModel
 {
+    /// <summary>
+    /// Indeholder et object af Collection View model
+    /// </summary>
+   
     class CollectionViewModel
     {
+        
         #region ListeAfPersoner
         public List<Dog> Dogs { get; set; } 
             = new List<Dog> 
