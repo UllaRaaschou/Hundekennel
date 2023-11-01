@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain_Hundekennel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,23 +9,29 @@ namespace UllasHundeKennel.Model
 {
     public class Dog
     {
-        public Dog(string name, string pedigree, string tatoo, DateTime dOB, DateTime dateAdded, string sex, string statusOfBreed, string father, string mother, string colour, string picturePath, DateTime updated, Boolean dead = false)
+        public Dog(string lineage, string name, string identifier, DateTime dateOfBirth, DateTime dateAdded, EnumGender gender, EnumBreedStatus breedStatus, string dad, string mom, EnumColor color, string image, DateTime lastUpdated, string hipDysplacia, string elbowDysplacia, string spondylose, string heartCondition, Boolean isAlive = true)
         
         {
+            
+            Lineage = lineage;
             Name = name;
-            Pedigree = pedigree;
-            Tatoo = tatoo;
-            DOB = dOB;
+            Identifier = identifier;
+            DateOfBirth = dateOfBirth;
             DateAdded = dateAdded;
-            DogDescription = new DogDescription(this, sex, statusOfBreed, father, mother, colour, picturePath, updated);
+            Image = image;
+            DogDescription = new DogDescription(gender, breedStatus, dad, mom, color, image, lastUpdated);
+            Health = new Health(hipDysplacia, elbowDysplacia, spondylose, heartCondition);
                        
         }
 
+        
+        public string Lineage { get; private set; }
         public string Name { get; private set; }
-        public string Pedigree { get; private set; }
-        public string Tatoo { get; private set; }
-        public DateTime DOB { get; private set; }
+        public string Identifier { get; private set; }
+        public DateTime DateOfBirth { get; private set; }
         public DateTime DateAdded { get; private set; }
+        public string Image { get; private set; }
         public DogDescription DogDescription { get; private set; }
+        public Health Health { get; private set; }
     }
 }

@@ -45,7 +45,7 @@
                              FontSize="20"
                              Foreground="White"
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding HomeViewCommand}">
+                             Command="{Binding HomeViewCommand}" Checked="RadioButton_Checked">
 
                 </RadioButton>
 

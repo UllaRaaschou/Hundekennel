@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Domain_Hundekennel\Domain_Hundekennel.csproj" />
     <ProjectReference Include="..\WPF_Hundekennel\WPF_Hundekennel.csproj" />
   </ItemGroup>
 

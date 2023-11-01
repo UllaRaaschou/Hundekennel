@@ -27,5 +27,10 @@ namespace WPF_Hundekennel
             InitializeComponent();
             DataContext = mvm;
         }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

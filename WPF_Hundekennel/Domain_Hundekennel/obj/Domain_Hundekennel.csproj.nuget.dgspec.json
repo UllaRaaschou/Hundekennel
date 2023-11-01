@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ullar\\Source\\Repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\Domain_Hundekennel.csproj": {}
+    "C:\\Users\\ullar\\source\\repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\Domain_Hundekennel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ullar\\Source\\Repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\Domain_Hundekennel.csproj": {
+    "C:\\Users\\ullar\\source\\repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\Domain_Hundekennel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ullar\\Source\\Repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\Domain_Hundekennel.csproj",
+        "projectUniqueName": "C:\\Users\\ullar\\source\\repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\Domain_Hundekennel.csproj",
         "projectName": "Domain_Hundekennel",
-        "projectPath": "C:\\Users\\ullar\\Source\\Repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\Domain_Hundekennel.csproj",
+        "projectPath": "C:\\Users\\ullar\\source\\repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\Domain_Hundekennel.csproj",
         "packagesPath": "C:\\Users\\ullar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ullar\\Source\\Repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\obj\\",
+        "outputPath": "C:\\Users\\ullar\\source\\repos\\UlllasKennelFork\\WPF_Hundekennel\\Domain_Hundekennel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ullar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

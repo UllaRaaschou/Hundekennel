@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Domain_Hundekennel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,29 +9,25 @@ namespace UllasHundeKennel.Model
 {
     public class DogDescription
     {
-        public Dog Dog { get; private set; }
-        public string Sex { get; set; }
-        public string StatusofBreed { get; set; }
-        public string Father { get; set; }
+        public EnumGender Gender { get; set; }
+        public EnumBreedStatus BreedStatus { get; set; }
+        public string Dad { get; set; }
 
-        public string Mother { get; set; }
-        public string Colour { get; set; }
-        public Boolean Dead { get; set; }
-        public string PicturePath { get; set; }
+        public string Mom { get; set; }
+        public EnumColor Color { get; set; }
+        public Boolean IsAlive { get; set; }
+        
+        public DateTime LastUpdated { get; set; }
 
-        public DateTime Updated { get; set; }
-
-        public DogDescription(Dog dog, string sex, string statusOfBreed, string father, string mother, string colour, string picturePath, DateTime updated, Boolean dead = false) 
+        public DogDescription(EnumGender gender, EnumBreedStatus breedStatus, string dad, string mom, EnumColor color, string picturePath, DateTime lastUpdated, Boolean isAlive = true) 
         {
-            Dog = dog;
-            Sex = sex;
-            StatusofBreed = statusOfBreed;
-            Father = father;
-            Mother = mother;
-            Colour = colour;
-            PicturePath = picturePath;
-            Updated = updated;  
-            Dead = dead;
+            Gender = gender;
+            BreedStatus = breedStatus;
+            Dad = dad;
+            Mom = mom;
+            Color = color;
+            LastUpdated = lastUpdated;  
+            IsAlive = isAlive;
         }
     }
 
