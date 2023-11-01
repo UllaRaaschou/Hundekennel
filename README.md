@@ -1,5 +1,5 @@
 # Hundekennel
-projekt projekt
+projekt projekt.
 
 
 # 🐕 System Krav fra Kennel Carolinekilde
