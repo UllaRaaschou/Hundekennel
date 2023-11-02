@@ -7,7 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_Hundekennel", "WPF_Hund
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject", "TestProject\TestProject.csproj", "{F786628D-28DB-48A5-92DA-0B2A37EE38B3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain_Hundekennel", "Domain_Hundekennel\Domain_Hundekennel.csproj", "{6440DCCD-DBE8-4078-8853-2B8D41F97685}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain_Hundekennel", "Domain_Hundekennel\Domain_Hundekennel.csproj", "{6440DCCD-DBE8-4078-8853-2B8D41F97685}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EBBA5600-B15B-48C2-BAF5-A103C1CA2B30}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
